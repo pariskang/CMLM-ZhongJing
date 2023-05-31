@@ -2,7 +2,7 @@
 A Traditional Chinese Medicine language model, inspired by the wisdom of  the eminent representative of ancient Chinese medical scholars, Zhang Zhongjing.
 This model aims to illuminate the profound knowledge of Traditional Chinese Medicine, bridging the gap between ancient wisdom and modern technology, and providing a reliable and professional tool for the medical and legal fields. However, all generated results are for reference only and should be provided by experienced professionals for diagnosis and treatment results and suggestions.
 
-Instruction Data Construction
+## Instruction Data Construction
 While many works such as Alpaca, Belle, etc., are based on the self-instruction approach which effectively harnesses the knowledge of large language models to generate diverse and creative instructions, this approach may lead to noise in instruction data, thereby affecting the accuracy of the model in fields where professional knowledge has a low tolerance for errors, such as medical and legal scenarios. Therefore, how to quickly invoke the OpenAI API without sacrificing the professionalism of instruction data has become an important research direction for instruction data construction and annotation scenarios. Here, we will briefly describe our preliminary experimental exploration.
 
 1.1 Multi-task Therapeutic Behavior Decomposition Instruction Construction Strategy
