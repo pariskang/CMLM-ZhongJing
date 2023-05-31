@@ -4,6 +4,8 @@ This model aims to illuminate the profound knowledge of Traditional Chinese Medi
 
 中医大语言模型，灵感来自中国古代杰出医家张仲景的智慧。 该模型旨在阐明中医博大精深之知识，传承古代智慧与现代技术创新，最终为医学领域提供可信赖和专业的工具。然而，目前所有产生的结果仅供参考，应由经验丰富的专业人员提供诊断和治疗结果和建议。
 
+! [logo] (https://github.com/pariskang/CMLM-ZhongJing/blob/main/logo.jfif "logo")
+
 ## 1.Instruction Data Construction
 While many works such as Alpaca, Belle, etc., are based on the self-instruct approach which effectively harnesses the knowledge of large language models to generate diverse and creative instructions, this approach may lead to noise in instruction data, thereby affecting the accuracy of the model in fields where professional knowledge has a low tolerance for errors, such as medical and legal scenarios. Therefore, how to quickly invoke the OpenAI API without sacrificing the professionalism of instruction data has become an important research direction for instruction data construction and annotation scenarios. Here, we will briefly describe our preliminary experimental exploration.
 ## 1.指令数据构建：
