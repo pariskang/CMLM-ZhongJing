@@ -1,11 +1,11 @@
-# CMLM-ZhongJing（中医语言模型-仲景）
+# CMLM-ZhongJing（中医大语言模型-仲景）
 A Traditional Chinese Medicine large language model, inspired by the wisdom of the eminent representative of ancient Chinese medical scholars, Zhang Zhongjing.
 This model aims to illuminate the profound knowledge of Traditional Chinese Medicine, bridging the gap between ancient wisdom and modern technology, and providing a reliable and professional tool for the medical and legal fields. However, all generated results are for reference only and should be provided by experienced professionals for diagnosis and treatment results and suggestions.
 
 ## 1.Instruction Data Construction
-While many works such as Alpaca, Belle, etc., are based on the self-instruction approach which effectively harnesses the knowledge of large language models to generate diverse and creative instructions, this approach may lead to noise in instruction data, thereby affecting the accuracy of the model in fields where professional knowledge has a low tolerance for errors, such as medical and legal scenarios. Therefore, how to quickly invoke the OpenAI API without sacrificing the professionalism of instruction data has become an important research direction for instruction data construction and annotation scenarios. Here, we will briefly describe our preliminary experimental exploration.
+While many works such as Alpaca, Belle, etc., are based on the self-instruct approach which effectively harnesses the knowledge of large language models to generate diverse and creative instructions, this approach may lead to noise in instruction data, thereby affecting the accuracy of the model in fields where professional knowledge has a low tolerance for errors, such as medical and legal scenarios. Therefore, how to quickly invoke the OpenAI API without sacrificing the professionalism of instruction data has become an important research direction for instruction data construction and annotation scenarios. Here, we will briefly describe our preliminary experimental exploration.
 ## 1.指令数据构建：
-目前大多如Alpaca、Belle等工作基于self-instruction思路。self-instruction思路可以很好的调用大语言模型的知识，生成多样和具有创造性的指令，在常规问答场景可以快速构造海量指令实现指令调优。但在一些专业知识容错率较低的领域，比如医疗和法律场景，幻觉输出会导致噪声指令数据从而影响模型的准确性。典型的情况是比如不当的诊断及处方建议甚至影响患者生命，事实性错误的法律条文和法理的引用会造成权益人的败诉。因此，如何快速调用OpenAI API且不牺牲指令数据的专业性成为指令数据构造及标注等场景的重要研究方向。以下将简述我们的初步实验探索。
+目前大多如Alpaca、Belle等工作基于self-instruct思路。self-instruct思路可以很好的调用大语言模型的知识，生成多样和具有创造性的指令，在常规问答场景可以快速构造海量指令实现指令调优。但在一些专业知识容错率较低的领域，比如医疗和法律场景，幻觉输出会导致噪声指令数据从而影响模型的准确性。典型的情况是比如不当的诊断及处方建议甚至影响患者生命，事实性错误的法律条文和法理的引用会造成权益人的败诉。因此，如何快速调用OpenAI API且不牺牲指令数据的专业性成为指令数据构造及标注等场景的重要研究方向。以下将简述我们的初步实验探索。
 
 #### 1.1 Multi-task Therapeutic Behavior Decomposition Instruction Construction Strategy
 Human memory and understanding require the construction of various scenarios and stories to implicitly encode knowledge information. The clarity of memory depends on the duration and richness of the learning process. Interleaved learning, spaced practice, and diversified learning can enhance the consolidation of knowledge, thereby forming a deep understanding of domain knowledge. Our approach is to learn from the process of human memory knowledge, use professional tables, leverage the language representation capabilities of large language models, strictly set specific prompt templates, so that the model can generate 16 scenarios based on the table data of Chinese medicine gynecology prescriptions, including patient therapeutic story, diagnostic analysis, diagnosis treatment expected result, formula function, interactive story, patient therapeutic story, narrative medicine, tongue & pulse, therapeutic template making, critical thinking, follow up, prescription, herb dosage, case study, real-world problem, disease mechanism, etc., to promote the model's reasoning ability for prescription data and diagnostic thinking logic.
@@ -47,3 +47,34 @@ Data Source and Instruction Quantity Table:
 | Treatment Noun Explanation Cleaned Data.json | 81211 | 1123 | 1123 | 1123 |
 | Total | 26294720 | 135108 | 135108 | 135108 |
 
+## To Do List
+Adopt a multi-task therapeutic decomposition strategy, based on multidisciplinary data such as internal medicine, gynecology, pediatrics, and orthopedics, to fine-tune the model with a domain-specific million-level instruct data.
+Continuously iterate and update. Subsequent releases will include Li Shizhen, Wang Shuhe, Huangfu Mi, Sun Simiao, Ge Hong, and Qihuang version of the large language model for Traditional Chinese Medicine.
+Explore efficient domain fine-tuning strategies.
+## 待做清单
+1.采用多任务诊疗分解策略，基于内外妇儿骨等多学科数据构建领域百万级instruct数据微调模型
+2.持续迭代更新，后续将发布李时珍、王叔和、皇甫谧、孙思邈、葛洪、岐黄版中医药大语言模型
+3.探索高效领域微调策略
+
+## Acknowledgements
+The Lora fine-tuning part of this project draws on the ideas of alpaca-lora and Chinese-Vicuna. We would like to express our gratitude to the members of the relevant research teams.
+## 致谢声明
+本项目Lora微调部分代码借鉴alpaca-lora、Chinese-Vicuna思路，我们对相关研究团队成员表示感谢。
+
+## Disclaimer
+This research is for academic research use only, commercial use is not allowed without permission, and it is not to be used in medical scenarios or scenarios with potential medical intent for clinical practice. This large language model for Traditional Chinese Medicine is still in the laboratory testing stage. The emerging syndrome classification and prescription generation capabilities at this stage are still rudimentary, and it does not yet have a highly reliable clinical diagnostic and therapeutic capability for gynecology and other clinical specialties. The output results are for internal reference testing only. Real medical diagnosis and decision-making still need to be issued by experienced physicians through a strictly regulated diagnostic and therapeutic process.
+## 免责声明
+本研究仅供学术研究使用，未经允许不得商业使用，不得在医疗场景或具有潜在医疗意图场景进行临床实践。本中医药大语言模型还处于实验室测试阶段，本阶段涌现的证型分类和处方生成能力尚且粗浅，对于妇科及其他临床专科尚不具备高度可信的临床诊疗能力，目前尚不具有医疗实践能力，输出结果仅供内部参考测试。真实的医疗诊断及决策依然需要经经验丰富的医师通过严格规范的诊疗过程出具。
+
+## Collaboration
+Data processing and annotation is one of the important steps in training the model. We sincerely welcome Traditional Chinese Medicine practitioners with strong TCM thinking and innovative spirit to join us. We will also declare corresponding contributions at the data level. We look forward to the day when we can achieve a reliable general-purpose AI for Traditional Chinese Medicine, allowing the ancient Chinese medicine to blend with modern technology and shine anew. This is also the ultimate mission of this project. If interested, please send an email to 21110860035@m.fudan.edu.cn.
+## 合作事宜
+数据处理与标注是训练模型重要环节之一，我们诚挚欢迎具有浓厚中医思维及创新精神的中医师加入，也会在数据层面声明相应贡献，期待我们有朝一日实现可信赖的中医通用人工智能，让古老的中医学与新时代科技融合焕发新春，这也是本项目的最终使命。如有意向，请发邮件到21110860035@m.fudan.edu.cn。
+
+## Team Introduction
+This project is jointly guided by Professor Zhang Wenqiang from Fudan University and Professor Wang Haofen from Tongji University. It is completed by Kang Yanlan, Chang Yang, and Fu Jiyuan, members of the ROI Lab at Fudan University.
+## 团队介绍
+本项目由复旦大学张文强教授和同济大学王昊奋教授共同指导，由复旦大学ROI Lab成员康砚澜、常扬、符纪元通力协作完成。
+
+## Citation
+If you find this work useful in your research, please cite our repository:
