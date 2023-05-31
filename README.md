@@ -48,13 +48,13 @@ Data Source and Instruction Quantity Table:
 | Total | 26294720 | 135108 | 135108 | 135108 |
 
 ## To Do List
-Adopt a multi-task therapeutic decomposition strategy, based on multidisciplinary data such as internal medicine, gynecology, pediatrics, and orthopedics, to fine-tune the model with a domain-specific million-level instruct data.
-Continuously iterate and update. Subsequent releases will include Li Shizhen, Wang Shuhe, Huangfu Mi, Sun Simiao, Ge Hong, and Qihuang version of the large language model for Traditional Chinese Medicine.
-Explore efficient domain fine-tuning strategies.
+- [ ] Adopt a multi-task therapeutic decomposition strategy, based on multidisciplinary data such as internal medicine, gynecology, pediatrics, and orthopedics, to fine-tune the model with a domain-specific million-level instruct data.
+- [ ] Continuously iterate and update. Subsequent releases will include Li Shizhen, Wang Shuhe, Huangfu Mi, Sun Simiao, Ge Hong, and Qihuang version of the large language model for Traditional Chinese Medicine.
+- [ ] Explore efficient domain fine-tuning strategies.
 ## 待做清单
-1.采用多任务诊疗分解策略，基于内外妇儿骨等多学科数据构建领域百万级instruct数据微调模型
-2.持续迭代更新，后续将发布李时珍、王叔和、皇甫谧、孙思邈、葛洪、岐黄版中医药大语言模型
-3.探索高效领域微调策略
+- [ ] 采用多任务诊疗分解策略，基于内外妇儿骨等多学科数据构建领域百万级instruct数据微调模型
+- [ ] 持续迭代更新，后续将发布李时珍、王叔和、皇甫谧、孙思邈、葛洪、岐黄版中医药大语言模型
+- [ ] 探索高效领域微调策略
 
 ## Acknowledgements
 The Lora fine-tuning part of this project draws on the ideas of alpaca-lora and Chinese-Vicuna. We would like to express our gratitude to the members of the relevant research teams.
@@ -67,14 +67,24 @@ This research is for academic research use only, commercial use is not allowed w
 本研究仅供学术研究使用，未经允许不得商业使用，不得在医疗场景或具有潜在医疗意图场景进行临床实践。本中医药大语言模型还处于实验室测试阶段，本阶段涌现的证型分类和处方生成能力尚且粗浅，对于妇科及其他临床专科尚不具备高度可信的临床诊疗能力，目前尚不具有医疗实践能力，输出结果仅供内部参考测试。真实的医疗诊断及决策依然需要经经验丰富的医师通过严格规范的诊疗过程出具。
 
 ## Collaboration
-Data processing and annotation is one of the important steps in training the model. We sincerely welcome Traditional Chinese Medicine practitioners with strong TCM thinking and innovative spirit to join us. We will also declare corresponding contributions at the data level. We look forward to the day when we can achieve a reliable general-purpose AI for Traditional Chinese Medicine, allowing the ancient Chinese medicine to blend with modern technology and shine anew. This is also the ultimate mission of this project. If interested, please send an email to 21110860035@m.fudan.edu.cn.
+Data processing and annotation is one of the important steps in training the model. We sincerely welcome Traditional Chinese Medicine practitioners with strong TCM thinking and innovative spirit to join us. We will also declare corresponding data contributions. We look forward to the day when we can achieve a reliable General Artificial Intelligence for Traditional Chinese Medicine, allowing the ancient Chinese medicine to blend with modern technology and shine anew. This is also the ultimate mission of this project. If interested, please send an email to 21110860035@m.fudan.edu.cn.
 ## 合作事宜
 数据处理与标注是训练模型重要环节之一，我们诚挚欢迎具有浓厚中医思维及创新精神的中医师加入，也会在数据层面声明相应贡献，期待我们有朝一日实现可信赖的中医通用人工智能，让古老的中医学与新时代科技融合焕发新春，这也是本项目的最终使命。如有意向，请发邮件到21110860035@m.fudan.edu.cn。
 
 ## Team Introduction
-This project is jointly guided by Professor Zhang Wenqiang from Fudan University and Professor Wang Haofen from Tongji University. It is completed by Kang Yanlan, Chang Yang, and Fu Jiyuan, members of the ROI Lab at Fudan University.
+This project is jointly guided by Professor Zhang Wenqiang from Fudan University and Professor Wang Haofen from Tongji University. It is completed by Kang Yanlan, Chang Yang, and Fu Jiyuan, members of the [ROI Lab](https://www.fudanroilab.com/) at Fudan University.
 ## 团队介绍
-本项目由复旦大学张文强教授和同济大学王昊奋教授共同指导，由复旦大学ROI Lab成员康砚澜、常扬、符纪元通力协作完成。
+本项目由复旦大学张文强教授和同济大学王昊奋教授共同指导，由复旦大学[ROI Lab](https://www.fudanroilab.com/)成员康砚澜、常扬、符纪元通力协作完成。
 
 ## Citation
 If you find this work useful in your research, please cite our repository:
+```
+@misc{CMLM-ZhongJing,
+  author = {Kang, Yanlan and Chang, Yang and Fu, Jiyuan and Wang, Haofen and Zhang, Wenqiang},
+  title = {CMLM-ZhongJing: Large Language Model are Good Story Listener},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{https://github.com/pariskang/CMLM-ZhongJing}}
+}
+```
