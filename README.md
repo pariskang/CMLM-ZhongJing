@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://raw.githubusercontent.com/pariskang/CMLM-ZhongJing/main/logo.png" alt="logo" title="logo" width="100%"> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/pariskang/CMLM-ZhongJing/main/logo.png" alt="logo" title="logo" width="50%"> </p>
 
 # CMLM-ZhongJing（中医大语言模型-仲景）
 A Traditional Chinese Medicine large language model, inspired by the wisdom of the eminent representative of ancient Chinese medical scholars, Zhang Zhongjing.
