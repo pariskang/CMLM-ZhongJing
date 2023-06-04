@@ -12,7 +12,7 @@ While many works such as Alpaca, Belle, etc., are based on the self-instruct app
 ## 1.指令数据构建：
 目前大多如Alpaca、Belle等工作基于self-instruct思路。self-instruct思路可以很好的调用大语言模型的知识，生成多样和具有创造性的指令，在常规问答场景可以快速构造海量指令实现指令调优。但在一些专业知识容错率较低的领域，比如医疗和法律场景，幻觉输出会导致噪声指令数据从而影响模型的准确性。典型的情况是比如不当的诊断及处方建议甚至影响患者生命，事实性错误的法律条文和法理的引用会造成权益人的败诉。因此，如何快速调用OpenAI API且不牺牲指令数据的专业性成为指令数据构造及标注等场景的重要研究方向。以下将简述我们的初步实验探索。
 
-<p align="center"> <img src="https://raw.githubusercontent.com/pariskang/CMLM-ZhongJing/main/logo_image/strategy.jpeg" alt="strategy" title="strategy" width="100%"> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/pariskang/CMLM-ZhongJing/main/logo_image/Strategy.jpeg" alt="strategy" title="strategy" width="100%"> </p>
 <p align="center"><b>Fig 2. A Multi-task Therapeutic Behavior Decomposition Instruction Construction Strategy in the Loop of Human Physicians.</b></p>
 
 #### 1.1 Multi-task Therapeutic Behavior Decomposition Instruction Construction Strategy
