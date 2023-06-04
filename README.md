@@ -1,10 +1,10 @@
+<p align="center"> <img src="https://raw.githubusercontent.com/pariskang/CMLM-ZhongJing/main/logo.png" alt="logo" title="logo" width="100%"> </p>
+
 # CMLM-ZhongJing（中医大语言模型-仲景）
 A Traditional Chinese Medicine large language model, inspired by the wisdom of the eminent representative of ancient Chinese medical scholars, Zhang Zhongjing.
 This model aims to illuminate the profound knowledge of Traditional Chinese Medicine, bridging the gap between ancient wisdom and modern technology, and providing a reliable and professional tool for the Traditional Chinese Medical fields. However, all generated results are for reference only and should be provided by experienced professionals for diagnosis and treatment results and suggestions.
 
 中医大语言模型，灵感来自中国古代杰出医家张仲景的智慧。 该模型旨在阐明中医博大精深之知识，传承古代智慧与现代技术创新，最终为医学领域提供可信赖和专业的工具。然而，目前所有产生的结果仅供参考，应由经验丰富的专业人员提供诊断和治疗结果和建议。
-
-<p align="center"> <img src="https://raw.githubusercontent.com/pariskang/CMLM-ZhongJing/main/logo.png" alt="logo" title="logo" width="50%"> </p>
 
 ## 1.Instruction Data Construction
 While many works such as Alpaca, Belle, etc., are based on the self-instruct approach which effectively harnesses the knowledge of large language models to generate diverse and creative instructions, this approach may lead to noise in instruction data, thereby affecting the accuracy of the model in fields where professional knowledge has a low tolerance for errors, such as medical and legal scenarios. Therefore, how to quickly invoke the OpenAI API without sacrificing the professionalism of instruction data has become an important research direction for instruction data construction and annotation scenarios. Here, we will briefly describe our preliminary experimental exploration.
