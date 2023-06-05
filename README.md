@@ -119,7 +119,7 @@ Data processing and annotation is one of the important steps in training the mod
 ## Team Introduction
 This project is jointly guided by Professor Zhang Wenqiang from Fudan University and Professor Wang Haofen from Tongji University. It is completed by Kang Yanlan, Chang Yang, and Fu Jiyuan, members of the [ROI Lab](https://www.fudanroilab.com/) at Fudan University.
 ## 团队介绍
-本项目由复旦大学张文强教授和同济大学王昊奋教授共同指导，由复旦大学[ROI Lab](https://www.fudanroilab.com/)成员康砚澜、常扬、符纪元通力协作完成。
+本项目由复旦大学张文强教授和同济大学王昊奋教授共同指导，由复旦大学[ROI Lab](https://www.fudanroilab.com/)成员康砚澜、[常扬](https://github.com/techlead-krischang)、符纪元通力协作完成。
 
 ## Citation
 If you find this work useful in your research, please cite our repository:
