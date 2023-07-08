@@ -28,10 +28,10 @@ Human memory and understanding require the construction of various scenarios and
     }
 ```
 
-#### 1.2 Regular Instruction Data Construction Strategy
+#### 1.2 Regular TCM Instruction Data Construction Strategy
 In addition, we have also added instructions based on the content of Chinese medicine ancient books, noun explanations, symptom synonyms, antonyms, syndromes, symptoms, treatment methods, etc. In order to form a control experiment, we only use one instruction template to represent data for this part, and the number of this part of the data is 80,000, which is significantly more than the number of instructions constructed by the above strategy. The following is the specific number of instructions and tokens information.
 Data Source and Instruction Quantity Table:
-#### 1.2 常规指令数据构建策略
+#### 1.2 中医常识指令数据构建策略
 此外，我们还增加了基于中医古籍内容、名词解释、症状近义词、反义词、证候、症状、治法等指令内容，为了形成对照试验，我们对这部分仅仅采用一种指令模板以表征数据，同时这部分数据的数量约为8万条，明显多于上述策略构建的指令数量，以下为指令具体数量及tokens数量信息。
 ```
     {
