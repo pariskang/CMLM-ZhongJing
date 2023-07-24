@@ -1,4 +1,7 @@
 # CMLM-ZhongJing（中医大语言模型-仲景）
+
+[English](https://github.com/pariskang/CMLM-ZhongJing/blob/main/README.md) | [中文](https://github.com/pariskang/CMLM-ZhongJing/blob/main/README.md) 
+
 A Traditional Chinese Medicine large language model, inspired by the wisdom of the eminent representative of ancient Chinese medical scholars, Zhang Zhongjing.
 This model aims to illuminate the profound knowledge of Traditional Chinese Medicine, bridging the gap between ancient wisdom and modern technology, and providing a reliable and professional tool for the Traditional Chinese Medical fields. However, all generated results are for reference only and should be provided by experienced professionals for diagnosis and treatment results and suggestions.
 
