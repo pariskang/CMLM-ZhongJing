@@ -1,6 +1,6 @@
 # CMLM-ZhongJing（中医大语言模型-仲景）
 
-[English](https://github.com/pariskang/CMLM-ZhongJing/blob/main/README.md) | [中文](https://github.com/pariskang/CMLM-ZhongJing/blob/main/README.md) 
+[中文](https://github.com/pariskang/CMLM-ZhongJing/blob/main/README.md) | [English](https://github.com/pariskang/CMLM-ZhongJing/blob/main/README.md)
 
 中医大语言模型，灵感来自中国古代杰出医家张仲景的智慧。 该模型旨在阐明中医博大精深之知识，传承古代智慧与现代技术创新，最终为医学领域提供可信赖和专业的工具。然而，目前所有产生的结果仅供参考，应由经验丰富的专业人员提供诊断和治疗结果和建议。 
 
