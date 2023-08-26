@@ -85,6 +85,11 @@
 - [ ] 持续迭代更新，后续将发布李时珍、王叔和、皇甫谧、孙思邈、葛洪、岐黄版中医药大语言模型
 - [ ] 探索高效领域微调策略
 
+## 人工评估
+我们由五位医师从五个维度进行评估
+<p align="center"> <img src="https://raw.githubusercontent.com/pariskang/CMLM-ZhongJing/main/logo_image/evaluation.jpeg" alt="evaluation" title="evaluation" width="100%"> </p>
+<p align="center"><b>表3. 人类医生评估结果。</b></p>
+
 ## 致谢声明
 本项目Lora微调部分代码借鉴alpaca-lora、Chinese-Vicuna思路，我们对相关研究团队成员表示感谢。
 
