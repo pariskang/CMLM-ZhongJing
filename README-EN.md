@@ -90,6 +90,12 @@ Our preliminary tests reveal that the ZhongJing large language model demonstrate
 - [ ] Continuously iterate and update. Subsequent releases will include Li Shizhen, Wang Shuhe, Huangfu Mi, Sun Simiao, Ge Hong, and Qihuang version of the large language model for Traditional Chinese Medicine.
 - [ ] Explore efficient domain fine-tuning strategies.
 
+## Manual Evaluation
+We had five physicians evaluate from five dimensions.
+<p align="center"> <img src="https://raw.githubusercontent.com/pariskang/CMLM-ZhongJing/main/logo_image/evaluation.jpeg" alt="evaluation" title="evaluation" width="100%"> </p>
+<p align="center"><b>Table 3. Human Physicians' Evaluation Results.</b></p>
+
+
 ## Acknowledgements
 The Lora fine-tuning part of this project draws on the ideas of alpaca-lora and Chinese-Vicuna. We would like to express our gratitude to the members of the relevant research teams.
 
