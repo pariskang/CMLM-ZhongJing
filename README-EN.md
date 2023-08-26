@@ -100,7 +100,7 @@ This research is for academic research use only, commercial use is not allowed w
 Data processing and annotation is one of the important steps in training the model. We sincerely welcome Traditional Chinese Medicine practitioners with strong TCM thinking and innovative spirit to join us. We will also declare corresponding data contributions. We look forward to the day when we can achieve a reliable General Artificial Intelligence for Traditional Chinese Medicine, allowing the ancient Chinese medicine to blend with modern technology and shine anew. This is also the ultimate mission of this project. If interested, please send an email to 21110860035@m.fudan.edu.cn.
 
 ## Team Introduction
-This project is jointly guided by Professor Zhang Wenqiang from Fudan University and Professor Wang Haofen from Tongji University. It is completed by Kang Yanlan, Chang Yang, and Fu Jiyuan, members of the [ROI Lab](https://www.fudanroilab.com/) at Fudan University.
+This project is jointly guided by Professor Zhang Wenqiang from Fudan University and Professor Wang Haofen from Tongji University. It is completed by Kang Yanlan, Chang Yang, and Fu Jiyuan, members of the [ROI Lab](https://www.fudanroilab.com/) at Fudan University. We would like to extend our gratitude to Drs. Wu Sunsi, Ma Qingshan, Fang Yide, Chen Yue, and Zhao Xue from the Longhua Hospital affiliated with the Shanghai University of Traditional Chinese Medicine for their data support and manual evaluations.
 
 ## Citation
 If you find this work useful in your research, please cite our repository:
