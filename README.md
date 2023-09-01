@@ -101,7 +101,7 @@
 
 ## 团队介绍
 本项目由复旦大学张文强教授和同济大学王昊奋教授共同指导，由复旦大学[ROI Lab](https://www.fudanroilab.com/)成员康砚澜、[常扬](https://github.com/techlead-krischang)、符纪元通力协作完成。
-感谢上海中医药大学附属龙华医院吴孙思、马青山、方仪德、陈悦、赵雪医师提供的数据支持及人工评估。
+感谢上海中医药大学附属龙华医院吴孙思、马青山、方仪德、陈越、赵雪医师提供的数据支持及人工评估。
 
 ## Citation
 If you find this work useful in your research, please cite our repository:
