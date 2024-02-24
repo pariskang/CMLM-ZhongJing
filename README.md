@@ -10,7 +10,10 @@
 # 训练及推理声明
 
 我们开源了针对Qwen1.5-1.8B-Chat模型的微调权重，在一张Tesla T4显卡即可实现高速推理。通过在我们专有医疗数据集上进行多次迭代训练确保模型在中医药领域具备较强理解和生成能力。模型权重可在[https://huggingface.co/CMLL/ZhongJing-2-1_8b](https://huggingface.co/CMLL/ZhongJing-2-1_8b)下载。
-推荐使用[colab](https://colab.research.google.com/drive/1DCPomUsfTxqkqxKpK-AIGvBSPbkOm7R3#scrollTo=jsn4szdjdtmF)免费GPU推理。
+可使用[colab](https://colab.research.google.com/drive/1DCPomUsfTxqkqxKpK-AIGvBSPbkOm7R3#scrollTo=jsn4szdjdtmF)免费GPU推理。
+Gradio部署Demo如下： 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TQJH3ef7I9L1kGmrf23nxm27ncdJUsen)
+
 
 ## 1.指令数据构建：
 目前大多如Alpaca、Belle等工作基于self-instruct思路。self-instruct思路可以很好的调用大语言模型的知识，生成多样和具有创造性的指令，在常规问答场景可以快速构造海量指令实现指令调优。但在一些专业知识容错率较低的领域，比如医疗和法律场景，幻觉输出会导致噪声指令数据从而影响模型的准确性。典型的情况是比如不当的诊断及处方建议甚至影响患者生命，事实性错误的法律条文和法理的引用会造成权益人的败诉。因此，如何快速调用OpenAI API且不牺牲指令数据的专业性成为指令数据构造及标注等场景的重要研究方向。以下将简述我们的初步实验探索。
