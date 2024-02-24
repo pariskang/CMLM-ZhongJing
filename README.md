@@ -9,10 +9,9 @@
 
 # 训练及推理声明
 
-我们开源了针对Qwen1.5-1.8B-Chat模型的微调权重，在一张Tesla T4显卡即可实现高速推理。通过在我们专有医疗数据集上进行多次迭代训练确保模型在中医药领域具备较强理解和生成能力。模型权重可在[https://huggingface.co/CMLL/ZhongJing-2-1_8b](https://huggingface.co/CMLL/ZhongJing-2-1_8b)下载。
-可使用[colab](https://colab.research.google.com/drive/1DCPomUsfTxqkqxKpK-AIGvBSPbkOm7R3#scrollTo=jsn4szdjdtmF)免费GPU推理。
-Gradio部署Demo如下： 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TQJH3ef7I9L1kGmrf23nxm27ncdJUsen)
+我们开源了针对Qwen1.5-1.8B-Chat模型的微调权重，在一张Tesla T4显卡即可实现高速推理。通过在我们专有医疗数据集上进行多次迭代训练确保模型在中医药领域具备较强理解和生成能力。模型权重可在huggingface<a href="https://huggingface.co/CMLL/ZhongJing-2-1_8b">
+    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" style="width: 20px;" alt="Hugging Face">
+</a>下载。也可使用[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TQJH3ef7I9L1kGmrf23nxm27ncdJUsen)免费GPU推理。
 
 
 ## 1.指令数据构建：
