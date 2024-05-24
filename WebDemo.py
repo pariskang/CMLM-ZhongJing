@@ -9,7 +9,7 @@ USE_CUDA = torch.cuda.is_available()
 device_ids_parallel = [0]
 device = torch.device("cuda:{}".format(device_ids_parallel[0]) if USE_CUDA else "cpu")
 
-# 初始化
+
 # peft_model_id = "CMLL/ZhongJing-2-1_8b"
 base_model_id = "Qwen/Qwen1.5-1.8B-Chat"
 model = AutoModelForCausalLM.from_pretrained(base_model_id, device_map="auto")
@@ -21,7 +21,7 @@ tokenizer = AutoTokenizer.from_pretrained(
     pad_token=''
 )
 
-#单轮
+
 def single_turn_chat(question):
     prompt = f"Question: {question}"
     messages = [
@@ -67,7 +67,7 @@ def multi_turn_chat(question, chat_history):
 def clear_history():
     return [], []
 
-# 单轮界面
+
 single_turn_interface = gr.Interface(
     fn=single_turn_chat,
     inputs=["text"],
@@ -76,7 +76,7 @@ single_turn_interface = gr.Interface(
     description="博极医源，精勤不倦。Unlocking the Wisdom of Traditional Chinese Medicine with AI."
 )
 
-# 多轮界面
+
 with gr.Blocks() as multi_turn_interface:
     chatbot = gr.Chatbot(label="仲景GPT-V2-1.8B 多轮对话")
     state = gr.State([])
@@ -89,7 +89,7 @@ with gr.Blocks() as multi_turn_interface:
     clear_button = gr.Button("清除聊天记录")
     clear_button.click(clear_history, outputs=[chatbot, state])
 
-# 主界面
+
 def switch_mode(mode):
     if mode == "单轮对话":
         return gr.update(visible=True), gr.update(visible=False)
