@@ -107,7 +107,8 @@ python WebDemo.py
 <p align="center"><b>表3. 人类医生评估结果。</b></p>
 
 ## 致谢声明
-本项目Lora微调部分代码借鉴alpaca-lora、Chinese-Vicuna思路，我们对相关研究团队成员表示感谢。
+本项目Lora微调部分代码借鉴alpaca-lora、Chinese-Vicuna思路，我们对相关研究团队成员表示感谢；感谢Doc2X<a href="https://doc2x.noedgeai.com/login?invite_code=">
+    <img src="[https://doc2x.noedgeai.com/assets/doc2x-0804cf37.svg]" style="width: 20px;" alt="Doc2X">提供的高精度OCR服务与支持。
 
 ## 免责声明
 本研究仅供学术研究使用，未经允许不得商业使用，不得在医疗场景或具有潜在医疗意图场景进行临床实践。本中医药大语言模型还处于实验室测试阶段，本阶段涌现的证型分类和处方生成能力尚且粗浅，对于妇科及其他临床专科尚不具备高度可信的临床诊疗能力，目前尚不具有医疗实践能力，输出结果仅供内部参考测试。真实的医疗诊断及决策依然需要经经验丰富的医师通过严格规范的诊疗过程出具。
