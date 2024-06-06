@@ -9,11 +9,11 @@ USE_CUDA = torch.cuda.is_available()
 device_ids_parallel = [0]
 device = torch.device("cuda:{}".format(device_ids_parallel[0]) if USE_CUDA else "cpu")
 
-
-# peft_model_id = "CMLL/ZhongJing-2-1_8b"
+# 初始化
+peft_model_id = "CMLL/ZhongJing-2-1_8b"
 base_model_id = "Qwen/Qwen1.5-1.8B-Chat"
 model = AutoModelForCausalLM.from_pretrained(base_model_id, device_map="auto")
-# model.load_adapter(peft_model_id)
+model.load_adapter(peft_model_id)
 tokenizer = AutoTokenizer.from_pretrained(
     "CMLL/ZhongJing-2-1_8b",
     padding_side="right",
@@ -21,53 +21,65 @@ tokenizer = AutoTokenizer.from_pretrained(
     pad_token=''
 )
 
-
+#单轮
 def single_turn_chat(question):
     prompt = f"Question: {question}"
     messages = [
         {"role": "system", "content": "You are a helpful TCM medical assistant named 仲景中医大语言模型, created by 医哲未来 of Fudan University."},
         {"role": "user", "content": prompt}
     ]
-
-    input = tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True
-    )
+    input = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     model_inputs = tokenizer([input], return_tensors="pt").to(device)
-
-
-    generated_ids = model.generate(
-        model_inputs.input_ids,
-        max_new_tokens=512
-    )
-    generated_ids = [
-        output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
-    ]
-
-
+    generated_ids = model.generate( model_inputs.input_ids,max_new_tokens=512)
+    generated_ids = [output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)]
     response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
     return response
 
-
-def multi_turn_chat(question, chat_history):
-    if chat_history is None:
-        chat_history = []
+#多轮
+def multi_turn_chat(question, chat_history=None):
+    if not isinstance(question, str):
+        raise ValueError("The question must be a string.")
+    
+    if chat_history is None or chat_history == []:
+        chat_history = [{"role": "system", "content": "You are a helpful TCM medical assistant named 仲景中医大语言模型, created by 医哲未来 of Fudan University."}]
+    
     chat_history.append({"role": "user", "content": question})
+    
+    # Apply the chat template and prepare the input
     inputs = tokenizer.apply_chat_template(chat_history, tokenize=False, add_generation_prompt=True)
     model_inputs = tokenizer([inputs], return_tensors="pt").to(device)
-    outputs = model.generate(model_inputs.input_ids, max_new_tokens=512)
-    generated_ids = outputs[:, model_inputs.input_ids.shape[-1]:]
-    response = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
+    
+    try:
+        # Generate the response from the model
+        outputs = model.generate(model_inputs.input_ids, max_new_tokens=512)
+        generated_ids = outputs[:, model_inputs.input_ids.shape[-1]:]
+        response = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
+    except Exception as e:
+        raise RuntimeError("Error in model generation: " + str(e))
+    
+    # Append the assistant's response to the chat history
     chat_history.append({"role": "assistant", "content": response})
-    formatted_history = [(entry['role'], entry['content']) for entry in chat_history]
+    
+    # Format the chat history for output
+    # formatted_history = [(entry['role'], entry['content']) for entry in chat_history]
+    tempass = ""
+    tempuser = ""
+    formatted_history = []
+    for entry in chat_history:
+        if entry['role'] == 'user':
+            tempuser = entry['content']
+        elif entry['role'] == 'assistant':
+            tempass = entry['content']
+            temp = tempuser,tempass
+            formatted_history.append(temp)
+    
     return formatted_history, chat_history
 
 
 def clear_history():
     return [], []
 
-
+# 单轮界面
 single_turn_interface = gr.Interface(
     fn=single_turn_chat,
     inputs=["text"],
@@ -76,7 +88,7 @@ single_turn_interface = gr.Interface(
     description="博极医源，精勤不倦。Unlocking the Wisdom of Traditional Chinese Medicine with AI."
 )
 
-
+# 多轮界面
 with gr.Blocks() as multi_turn_interface:
     chatbot = gr.Chatbot(label="仲景GPT-V2-1.8B 多轮对话")
     state = gr.State([])
@@ -89,7 +101,7 @@ with gr.Blocks() as multi_turn_interface:
     clear_button = gr.Button("清除聊天记录")
     clear_button.click(clear_history, outputs=[chatbot, state])
 
-
+# 主界面
 def switch_mode(mode):
     if mode == "单轮对话":
         return gr.update(visible=True), gr.update(visible=False)
