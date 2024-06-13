@@ -10,12 +10,12 @@ device_ids_parallel = [0]
 device = torch.device("cuda:{}".format(device_ids_parallel[0]) if USE_CUDA else "cpu")
 
 # 初始化
-peft_model_id = "CMLL/ZhongJing-2-1_8b"
+peft_model_id = "CMLM/ZhongJing-2-1_8b"
 base_model_id = "Qwen/Qwen1.5-1.8B-Chat"
 model = AutoModelForCausalLM.from_pretrained(base_model_id, device_map="auto")
 model.load_adapter(peft_model_id)
 tokenizer = AutoTokenizer.from_pretrained(
-    "CMLL/ZhongJing-2-1_8b",
+    "CMLM/ZhongJing-2-1_8b",
     padding_side="right",
     trust_remote_code=True,
     pad_token=''
