@@ -9,14 +9,14 @@
 
 # 训练及推理声明
 
-我们开源了针对 **Baichuan2-13B-Chat**、**Qwen1.5-1.8B-Chat** 模型的微调权重，1.8B模型用户可在一张 Tesla T4 显卡上实现高速推理。通过在我们专有医疗数据集上进行多次迭代训练，确保模型在中医药领域具备较强的理解和生成能力。模型权重可在 Huggingface 平台下载。
+我们开源了针对 **Baichuan2-13B-Chat**、**Qwen1.5-1.8B-Chat** 模型的微调权重，1.8B 模型用户可在一张 Tesla T4 显卡上实现高速推理。通过在我们专有医疗数据集上进行多次迭代训练，确保模型在中医药领域具备较强的理解和生成能力。模型权重可在 Huggingface 平台下载。
 
-| 模型名称               | Huggingface 链接                                                                                                                                                        |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Baichuan2-13B-Chat** | [ZhongjingGPT1_13B](https://huggingface.co/CMLM/ZhongjingGPT1_13B)                                                                                                      |
-| **Qwen1.5-1.8B-Chat**  | [ZhongJing-2-1_8b](https://huggingface.co/CMLL/ZhongJing-2-1_8b)                                                                                                        |
+| 版本                     | 参数量              | 基座模型               | Huggingface 下载链接                                                                                                                                   |
+|-------------------------|-------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| **ZhongjingGPT1_13B**    | 13B               | Baichuan2-13B-Chat     | [ZhongjingGPT1_13B](https://huggingface.co/CMLM/ZhongjingGPT1_13B)                                                                                   |
+| **ZhongJing-2-1_8b**     | 1.8B              | Qwen1.5-1.8B-Chat      | [ZhongJing-2-1_8b](https://huggingface.co/CMLL/ZhongJing-2-1_8b)                                                                                     |
 
-也可使用以下链接通过 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DACpocPh9kMVeify-2_fuooOS3RjVgNc) 免费进行 1.8B模型的GPU 推理。
+也可使用以下链接通过 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DACpocPh9kMVeify-2_fuooOS3RjVgNc) 免费进行 1.8B 模型的 GPU 推理。
 
 ## WebDemo
 
