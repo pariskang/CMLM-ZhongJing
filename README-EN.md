@@ -110,13 +110,13 @@ This research is for academic research use only, commercial use is not allowed w
 Data processing and annotation is one of the important steps in training the model. We sincerely welcome Traditional Chinese Medicine practitioners with strong TCM thinking and innovative spirit to join us. We will also declare corresponding data contributions. We look forward to the day when we can achieve a reliable General Artificial Intelligence for Traditional Chinese Medicine, allowing the ancient Chinese medicine to blend with modern technology and shine anew. This is also the ultimate mission of this project. If interested, please send an email to 21110860035@m.fudan.edu.cn.
 
 ## Team Introduction
-This project is jointly guided by Professor Zhang Wenqiang from Fudan University, Postdoctoral Fellow Wang Yan and Gao shuyong from Fudan University, and Professor Wang Haofen from Tongji University. The team effort includes Kang Yanlan, [Chang Yang](https://github.com/techlead-krischang), and Fu Jiyuan from Fudan University's [ROI Lab](https://www.fudanroilab.com/), as well as Xing Haozhe in completing this project. Special thanks to the medical team from the Longhua Hospital affiliated with Shanghai University of Traditional Chinese Medicine, including Wu Sunsi, Ma Qingshan, Fang Yide, Chen Yue, Jiao Yuqi, Liu Xiyu, and Zhao Xue for their valuable data support and manual assessments.
+This project is jointly guided by Professor Zhang Wenqiang from Fudan University, Postdoctoral Fellow Wang Yan and Gao shuyong from Fudan University, and Professor Wang Haofen from Tongji University. The team effort includes Kang Yanlan, [Chang Yang](https://github.com/techlead-krischang), and Fu Jiyuan from Fudan University, as well as Xing Haozhe in completing this project. Special thanks to the medical team from the Longhua Hospital affiliated with Shanghai University of Traditional Chinese Medicine, including Wu Sunsi, Ma Qingshan, Fang Yide, Chen Yue, Jiao Yuqi, Liu Xiyu, and Zhao Xue for their valuable data support and manual assessments.
 
 ## Citation
 If you find this work useful in your research, please cite our repository:
 ```
 @misc{CMLM-ZhongJing,
-  author = {Kang, Yanlan and Chang, Yang and Fu, Jiyuan and Yan, Wang and Shuyong, Gao and Wang, Haofen and Zhang, Wenqiang},
+  author = {Kang, Yanlan and Chang, Yang and Fu, Jiyuan and Yan, Wang and Wang, Haofen and Zhang, Wenqiang},
   title = {CMLM-ZhongJing: Large Language Model are Good Story Listener},
   year = {2023},
   publisher = {GitHub},
