@@ -129,7 +129,7 @@ python WebDemo.py
 If you find this work useful in your research, please cite our repository:
 ```
 @misc{CMLM-ZhongJing,
-  author = {Kang, Yanlan and Chang, Yang and Fu, Jiyuan and Wang, Yan and Shuyong, Gao and Wang, Haofen and Zhang, Wenqiang},
+  author = {Kang, Yanlan and Chang, Yang and Fu, Jiyuan and Wang, Yan and Wang, Haofen and Zhang, Wenqiang},
   title = {CMLM-ZhongJing: Large Language Model is Good Story Listener},
   year = {2023},
   publisher = {GitHub},
