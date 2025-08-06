@@ -120,6 +120,15 @@ This project was jointly supervised by Professor William Chu from Fuyao Universi
 ## Citation
 If you find this work useful in your research, please cite our repository:
 ```
+@misc{ZhongJingGPT-TST2025,
+  author       = {Kang, Yanlan and Chang, Yang and Wu, Sunsi and Wu, Xuening and Jiao, Yuqi and Fu, Jiyuan and Ma, Qingshan and Fang, Yide and Chen, Yue and Zhao, Xue and Zhang, Xukun and Zhu, Jingyi and Liu, Xiyu and Wang, Yan and Wang, Haofen and Chu, William Cheng-Chung and Zhang, Wenqiang},
+  title        = {ZhongJingGPT: An Expert Knowledge-Guided Language Model for Traditional Chinese Medicine},
+  year         = {2025},
+  publisher    = {SciOpen},
+  journal      = {Tsinghua Science and Technology},
+  howpublished = {\url{https://doi.org/10.26599/TST.2025.9010046}}
+}
+
 @misc{CMLM-ZhongJing,
   author = {Kang, Yanlan and Chang, Yang and Fu, Jiyuan and Yan, Wang and Wang, Haofen and Zhang, Wenqiang},
   title = {CMLM-ZhongJing: Large Language Model are Good Story Listener},
