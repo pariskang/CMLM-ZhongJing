@@ -4,6 +4,9 @@
 
 中医大语言模型，灵感来自中国古代杰出医家张仲景的智慧。 该模型旨在阐明中医博大精深之知识，传承古代智慧与现代技术创新，最终为医学领域提供可信赖和专业的工具。然而，目前所有产生的结果仅供参考，应由经验丰富的专业人员提供诊断和治疗结果和建议。 
 
+# ✨ 咨讯  
+[05/08/2025]: 🎉🎉🎉 我们的论文 **“ZhongJingGPT: An Expert Knowledge-Guided Language Model for Traditional Chinese Medicine”**  已被 《Tsinghua Science and Technology》录用，点击阅读 [链接](https://doi.org/10.26599/TST.2025.9010046).
+
 <p align="center"> <img src="https://raw.githubusercontent.com/pariskang/CMLM-ZhongJing/main/logo.png" alt="logo" title="logo" width="50%"> </p>
 <p align="center"><b>图1. 由Bing画图输出与人类提示相结合生成的CMLM-ZhongJing的Logo。</b></p>
 
@@ -128,6 +131,15 @@ python WebDemo.py
 ## Citation
 If you find this work useful in your research, please cite our repository:
 ```
+@misc{ZhongJingGPT-TST2025,
+  author       = {Kang, Yanlan and Chang, Yang and Wu, Sunsi and Wu, Xuening and Jiao, Yuqi and Fu, Jiyuan and Ma, Qingshan and Fang, Yide and Chen, Yue and Zhao, Xue and Zhang, Xukun and Zhu, Jingyi and Liu, Xiyu and Wang, Yan and Wang, Haofen and Chu, William Cheng-Chung and Zhang, Wenqiang},
+  title        = {ZhongJingGPT: An Expert Knowledge-Guided Language Model for Traditional Chinese Medicine},
+  year         = {2025},
+  publisher    = {SciOpen},
+  journal      = {Tsinghua Science and Technology},
+  howpublished = {\url{https://doi.org/10.26599/TST.2025.9010046}}
+}
+
 @misc{CMLM-ZhongJing,
   author = {Kang, Yanlan and Chang, Yang and Fu, Jiyuan and Wang, Yan and Wang, Haofen and Zhang, Wenqiang},
   title = {CMLM-ZhongJing: Large Language Model is Good Story Listener},
@@ -137,3 +149,5 @@ If you find this work useful in your research, please cite our repository:
   howpublished = {\url{https://github.com/pariskang/CMLM-ZhongJing}}
 }
 ```
+
+
